@@ -1,0 +1,9 @@
+%p#notice= notice
+
+%p
+  %b Exercise:
+  = @workout_exercise.exercise
+
+= link_to 'Edit', edit_workout_exercise_path(@workout_exercise)
+\|
+= link_to 'Back', workout_exercises_path
