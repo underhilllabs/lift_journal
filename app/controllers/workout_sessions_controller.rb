@@ -69,6 +69,6 @@ class WorkoutSessionsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def workout_session_params
-      params.require(:workout_session).permit(:user_id, :when, :start_time, :end_time)
+      params.require(:workout_session).permit(:tile, :user_id, :when, :start_time, :end_time)
     end
 end
