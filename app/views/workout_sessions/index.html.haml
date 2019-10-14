@@ -1,0 +1,27 @@
+%h1 Listing workout_sessions
+
+%table
+  %thead
+    %tr
+      %th User
+      %th When
+      %th Start time
+      %th End time
+      %th
+      %th
+      %th
+
+  %tbody
+    - @workout_sessions.each do |workout_session|
+      %tr
+        %td= workout_session.user
+        %td= workout_session.when
+        %td= workout_session.start_time
+        %td= workout_session.end_time
+        %td= link_to 'Show', workout_session
+        %td= link_to 'Edit', edit_workout_session_path(workout_session)
+        %td= link_to 'Destroy', workout_session, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Workout session', new_workout_session_path
