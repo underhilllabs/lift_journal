@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :exercise_sets
   resources :workout_exercises
   resources :exercises
   resources :workout_sessions

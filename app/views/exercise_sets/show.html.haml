@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Weight:
+  = @exercise_set.weight
+%p
+  %b Reps:
+  = @exercise_set.reps
+%p
+  %b Workout exercise:
+  = @exercise_set.workout_exercise
+
+= link_to 'Edit', edit_exercise_set_path(@exercise_set)
+\|
+= link_to 'Back', exercise_sets_path
